@@ -32,4 +32,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          mike deploy --push --branch gh-pages
+          mike deploy --push --branch gh-pages latest
