@@ -42,7 +42,7 @@ jobs:
       - name: Push documentation to remote repository
         run: |
           git remote add  remote-push-test  https://github.com/tkzit/remote-push-test.git
-          git checkout gh-pages
+          git checkout -b test
           git add .
           git commit -m "Deploy MkDocs documentation"
-          git push remote-push-test gh-pages
+          git push remote-push-test test
