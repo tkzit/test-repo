@@ -38,3 +38,11 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           mike deploy --push --branch gh-pages latest
+
+      - name: Push documentation to remote repository
+        run: |
+          git remote add  remote-push-test  https://github.com/tkzit/remote-push-test.git
+          git checkout gh-pages
+          git add .
+          git commit -m "Deploy MkDocs documentation"
+          git push remote-push-test gh-pages
