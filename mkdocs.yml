@@ -2,7 +2,7 @@ repo_name: tkzit/test-repo
 repo_url: https://github.com/tkzit/test-repo/blob/##CI_ENVIROMENT_BRANCH##
 edit_uri: docs/
 
-copyright: -
+#copyright: -
 
 theme:
     name: 'material'
